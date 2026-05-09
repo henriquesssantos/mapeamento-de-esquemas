@@ -386,7 +386,7 @@ function sendWhatsApp() {
     for(const tag in scores) {
         text += `• ${schemaMap[tag]}: ${(scores[tag].sum / scores[tag].count).toFixed(2)}\n`;
     }
-    const phone = "55539842626"; 
+    const phone = "5553984322626"; 
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`);
 }
 
