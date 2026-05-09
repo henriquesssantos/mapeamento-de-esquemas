@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Esquemas | Eduardo Henrique Santos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background-system">
+        <div id="particles-js"></div>
+        <canvas id="brain-canvas"></canvas>
+    </div>
+
+    <div class="presentation-deck quiz-deck">
+        <div class="slide-container active quiz-container" id="slide1">
+            <div class="quiz-setup-content">
+                <h2 class="slide-title">Quem está<br><span>respondendo?</span></h2>
+                <input type="text" id="patientName" placeholder="Seu nome completo" class="big-input">
+                <button class="btn-primary" onclick="startTest()">Iniciar Avaliação</button>
+            </div>
+            <footer>Eduardo Henrique Santos - Terapeuta</footer>
+        </div>
+
+        <div id="dynamic-slides-container" style="display:contents;"></div>
+
+        <div class="slide-container quiz-container" id="slide-results">
+            <div class="quiz-results-content">
+                <h2 class="slide-title">Protocolo<br><span>Concluído.</span></h2>
+                <p class="subtitle">Sua análise foi processada.</p>
+                <div id="result-summary"></div>
+                <button class="btn-whatsapp" onclick="sendWhatsApp()">
+                    Enviar via WhatsApp
+                </button>
+            </div>
+            <footer>Eduardo Henrique Santos - Terapeuta</footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
